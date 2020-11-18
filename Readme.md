@@ -1,6 +1,6 @@
 ---
-title: Template
-author: Zuletzt bearbeitet von Daniel Kwoska
+title: Starting out with Graphics App
+author: Zuletzt bearbeitet von Jürgen Hahn
 documentclass: scrartcl
 classoption:
   - a4paper
@@ -12,12 +12,12 @@ header-includes: |
     \pagestyle{fancy}
     \fancyhf{}
     \rhead{OOP WS 2020/21}
-    \lhead{U00 | Template}
+    \lhead{U03 | Starting out with Graphics App}
     \cfoot{\includegraphics[height=2cm]{docs/footer.png}}
     \fancypagestyle{plain}{
       \fancyhf{}
       \rhead{OOP WS 2020/21}
-      \lhead{U03 | Template}
+      \lhead{U03 | Starting out with Graphics Appmplate}
       \cfoot[C]{\includegraphics[height=2cm]{docs/footer.png}}}
 ---
 
@@ -28,7 +28,7 @@ header-includes: |
 ## Wichtige Informationen zur Bearbeitung der Aufgabe 
  - [Informationen zur Entwicklungsumgebung *IntelliJ IDEA*](https://elearning.uni-regensburg.de/mod/book/view.php?id=1480675)
  - [Informationen zum Im- und Export von Projekten](https://elearning.uni-regensburg.de/mod/book/view.php?id=1480675&chapterid=51551)
- - [GraphicsApp](https://elearning.uni-regensburg.de/mod/url/view.php?id=1482162)
+ - [GraphicsApp](https://oop-regensburg.github.io/GraphicsApp-Reborn-Library/html/)
 
 ## Starterpaket
 
@@ -38,7 +38,8 @@ Ein vorbereitetes Starterpaket zur selbständigen Implementierung der Aufgabe fi
 
 In dieser Aufgabe können Sie erste Erfahrungen mit der GraphicsApp sammeln. Zeichnen Sie einen überraschten Smiley, wie in der folgenden Abbildung dargestellt.
 
-<img src="img/u03-hello-graphicsApp.png" class="center" />
+![Hello GraphicsApp](docs/u03-hello-graphicsApp.png){ width=25% }
+
 
 - Ihr Programm startet in der Methode `public void initalize()`. Das Zeichnen des Gesichts soll in der Methode `draw` druchgeführt werden.
 
@@ -57,7 +58,7 @@ In dieser Aufgabe können Sie erste Erfahrungen mit der GraphicsApp sammeln. Zei
 In dieser Aufgabe sollen Sie eine Zielscheibe auf dem Bildschirm
 zeichnen:
 
-<img src="img/u03-target.png" class="center" />
+![Target](docs/u03-target.png){ width=25% }
 
 Die Zielscheibe muss aus 15 Ellipse-Objekten bestehen und im Zentrum des Bildschirms gezeichnet werden. Der mittlere Ring ist rot und hat einen Durchmesser von 10, die Farben wechseln sich dann nach außen hin ab. Der Durchmesser jedes weiteren Rings entspricht dem seines Vorgängers, erhöht um den Durchmesser des ersten Rings.  Legen Sie für die Anzahl der Ringe und den Durchmesser des innersten Rings geeignete Konstanten an, und testen Sie, ob Ihr Programm auch mit anderen Werten einwandfrei funktioniert. Legen Sie weitere Konstanten an, um Ihren Code robuster gegen Veränderungen zu machen.
 
@@ -69,7 +70,8 @@ Die Zielscheibe muss aus 15 Ellipse-Objekten bestehen und im Zentrum des Bildsch
 
 Ihr Programm soll eine Pyramide zeichnen, die aus einzelnen Ziegeln besteht, die in horizontalen Linien angeordnet werden. Die Anzahl der einzelnen Blöcke nimmt um einen Block pro Reihe ab:
 
-<img src="img/u03-pyramide.png" class="center" />
+![Pyramid](docs/u03-pyramide.png){ width=25% }
+
 
 Die Pyramide soll am unteren Ende der Zeichenfläche stehen und in der Mitte zentriert werden. Verwenden Sie mindestens die folgenden Konstanten:
 
@@ -93,4 +95,4 @@ der Vorlesung im Rahmen des *draw loops* vorgestellt wurde.
 
 Definieren Sie in Ihrem Programm zwei Konstanten für einen initialen (`50px`) sowie einen maximalen Radius (`250px`) für die Ellipse. Sobald der maximale Wert erreicht ist, wird die Ellipse auf die ursprüngliche Größe zurückgesetzt. Die Animation `[initialer Radius -> maximaler Radius]` soll sich endlos wiederholen.
 
-![](img/expandingCircle.gif)
+![Expanding Circle](docs/expandingCircle.gif)
