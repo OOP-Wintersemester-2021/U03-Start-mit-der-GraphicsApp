@@ -3,6 +3,7 @@ package Target;
 import de.ur.mi.oop.app.GraphicsApp;
 import de.ur.mi.oop.colors.Color;
 import de.ur.mi.oop.colors.Colors;
+import de.ur.mi.oop.launcher.GraphicsAppLauncher;
 
 public class Target extends GraphicsApp {
 
@@ -34,5 +35,9 @@ public class Target extends GraphicsApp {
     private void setupCanvas() {
         setCanvasSize(CANVAS_WIDTH, CANVAS_HEIGHT);
         drawBackground(BACKGROUND_COLOR);
+    }
+
+    public static void main(String[] args) {
+        GraphicsAppLauncher.launch();
     }
 }
