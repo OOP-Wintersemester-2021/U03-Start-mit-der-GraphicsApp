@@ -17,7 +17,7 @@ header-includes: |
     \fancypagestyle{plain}{
       \fancyhf{}
       \rhead{OOP WS 2020/21}
-      \lhead{U03 | Starting out with Graphics Appmplate}
+      \lhead{U03 | Starting out with Graphics App}
       \cfoot[C]{\includegraphics[height=2cm]{docs/footer.png}}}
 ---
 
