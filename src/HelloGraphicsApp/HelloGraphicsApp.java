@@ -4,6 +4,7 @@ import de.ur.mi.oop.app.GraphicsApp;
 import de.ur.mi.oop.colors.Color;
 import de.ur.mi.oop.colors.Colors;
 import de.ur.mi.oop.graphics.Ellipse;
+import de.ur.mi.oop.launcher.GraphicsAppLauncher;
 
 public class HelloGraphicsApp extends GraphicsApp {
 
@@ -87,5 +88,9 @@ public class HelloGraphicsApp extends GraphicsApp {
         rightEye.draw();
         Ellipse rightIris = new Ellipse(x, y, pupilWidth, pupilHeight, Colors.WHITE);
         rightIris.draw();
+    }
+
+    public static void main(String[] args) {
+        GraphicsAppLauncher.launch();
     }
 }

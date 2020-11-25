@@ -4,6 +4,7 @@ import de.ur.mi.oop.app.GraphicsApp;
 import de.ur.mi.oop.colors.Color;
 import de.ur.mi.oop.colors.Colors;
 import de.ur.mi.oop.graphics.Circle;
+import de.ur.mi.oop.launcher.GraphicsAppLauncher;
 
 public class ExpandingCircle extends GraphicsApp {
 
@@ -14,7 +15,7 @@ public class ExpandingCircle extends GraphicsApp {
     private static final Color BACKGROUND_COLOR = Colors.WHITE;
     private static final Color CIRCLE_COLOR = Colors.ORANGE;
     private static final int INITIAL_CIRCLE_RADIUS = 50;
-    private static final int MAX_CIRCLE_RADIUS = 250;
+    private static final int MAX_CIRCLE_RADIUS = CANVAS_WIDTH / 2;
 
     private Circle circle;
 
@@ -49,10 +50,10 @@ public class ExpandingCircle extends GraphicsApp {
 
     private void setupCircle() {
         circle = new Circle(
-                CANVAS_WIDTH / 2.f,
-                CANVAS_HEIGHT / 2.f,
-                INITIAL_CIRCLE_RADIUS * 2.f,
-                CIRCLE_COLOR);
+        CANVAS_WIDTH / 2.f,
+        CANVAS_HEIGHT / 2.f,
+        INITIAL_CIRCLE_RADIUS,
+        CIRCLE_COLOR);
     }
 
     /*
@@ -63,10 +64,14 @@ public class ExpandingCircle extends GraphicsApp {
     private void updateCircle() {
         float newCircleRadius = circle.getRadius() + 1;
 
-        if(newCircleRadius > MAX_CIRCLE_RADIUS * 2) {
-            newCircleRadius = INITIAL_CIRCLE_RADIUS * 2;
+        if(newCircleRadius > MAX_CIRCLE_RADIUS) {
+            newCircleRadius = INITIAL_CIRCLE_RADIUS;
         }
 
         circle.setRadius(newCircleRadius);
+    }
+
+    public static void main(String[] args) {
+        GraphicsAppLauncher.launch();
     }
 }

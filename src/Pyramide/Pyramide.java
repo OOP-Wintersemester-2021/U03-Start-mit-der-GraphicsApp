@@ -4,6 +4,7 @@ import de.ur.mi.oop.app.GraphicsApp;
 import de.ur.mi.oop.colors.Color;
 import de.ur.mi.oop.colors.Colors;
 import de.ur.mi.oop.graphics.Rectangle;
+import de.ur.mi.oop.launcher.GraphicsAppLauncher;
 
 
 public class Pyramide extends GraphicsApp {
@@ -76,5 +77,9 @@ public class Pyramide extends GraphicsApp {
 
     private int calcCurrentXPos(int row, int xPosStart){
         return xPosStart + ((row -1) * (BRICK_WIDTH / 2));
+    }
+
+    public static void main(String[] args) {
+        GraphicsAppLauncher.launch();
     }
 }
